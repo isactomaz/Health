@@ -178,62 +178,103 @@
         <!--Início-->
         <scene sceneID="3kS-2r-bqD">
             <objects>
-                <viewController title="Início" id="QiG-ml-ZSP" sceneMemberID="viewController">
+                <viewController title="Início" id="QiG-ml-ZSP" customClass="ViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UB1-Ri-ubN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QsR-aZ-m8g">
-                                <rect key="frame" x="0.0" y="44" width="414" height="804"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKW-ky-RLm">
-                                <rect key="frame" x="20" y="76" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hello, User!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMh-aZ-6XP">
-                                <rect key="frame" x="128" y="76" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjS-AJ-h7h">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpb-Gb-qQa" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="jKW-ky-RLm" userLabel="User Image View">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="enM-ac-jvC">
+                                                <rect key="frame" x="42" y="213" width="414" height="162"/>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-lb-AQx">
+                                                <rect key="frame" x="177" y="309" width="145" height="31"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="PANIC BUTTON">
+                                                    <attributedString key="attributedSubtitle"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hello, User!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMh-aZ-6XP" userLabel="User Name Text View">
+                                                <rect key="frame" x="108" y="8" width="266" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.0" green="0.38039215686274508" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="enM-ac-jvC" firstAttribute="centerY" secondItem="gpb-Gb-qQa" secondAttribute="centerY" id="Lsj-2d-omT"/>
+                                            <constraint firstItem="TD6-lb-AQx" firstAttribute="bottom" secondItem="enM-ac-jvC" secondAttribute="bottom" id="ZQR-Yh-UfR"/>
+                                            <constraint firstItem="enM-ac-jvC" firstAttribute="centerX" secondItem="gpb-Gb-qQa" secondAttribute="centerX" id="eoA-oN-Qk6"/>
+                                            <constraint firstItem="TD6-lb-AQx" firstAttribute="centerX" secondItem="gpb-Gb-qQa" secondAttribute="centerX" id="rOl-3W-GCc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.0" green="0.38039215686274508" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="enM-ac-jvC">
-                                <rect key="frame" x="0.0" y="365" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-lb-AQx">
-                                <rect key="frame" x="135" y="677" width="145" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="PANIC BUTTON">
-                                    <attributedString key="attributedSubtitle"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                                <constraints>
+                                    <constraint firstItem="gpb-Gb-qQa" firstAttribute="leading" secondItem="vKd-Yi-xyc" secondAttribute="leading" id="5wv-Jk-BLD"/>
+                                    <constraint firstItem="gpb-Gb-qQa" firstAttribute="bottom" secondItem="vKd-Yi-xyc" secondAttribute="bottom" id="Oh5-XE-RWo"/>
+                                    <constraint firstItem="gpb-Gb-qQa" firstAttribute="top" secondItem="vKd-Yi-xyc" secondAttribute="top" id="Sna-nx-2ly"/>
+                                    <constraint firstItem="vKd-Yi-xyc" firstAttribute="trailing" secondItem="gpb-Gb-qQa" secondAttribute="trailing" id="sls-x4-aKy"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Jmt-pF-Yjj"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vKd-Yi-xyc"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-Y9-Jl2" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SEe-e4-FVZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gpb-Gb-qQa" firstAttribute="height" secondItem="UB1-Ri-ubN" secondAttribute="height" multiplier="0.142857" id="2yX-ky-3SG"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="bottom" secondItem="JhQ-Y9-Jl2" secondAttribute="bottom" id="3wp-Ss-qBd"/>
+                            <constraint firstItem="JhQ-Y9-Jl2" firstAttribute="top" secondItem="SEe-e4-FVZ" secondAttribute="top" id="7xD-wV-Y9C"/>
+                            <constraint firstItem="kjS-AJ-h7h" firstAttribute="top" secondItem="SEe-e4-FVZ" secondAttribute="top" constant="340" id="7z4-v5-Ilv"/>
+                            <constraint firstItem="kjS-AJ-h7h" firstAttribute="leading" secondItem="SEe-e4-FVZ" secondAttribute="leading" id="AlT-gd-NYb"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="bottom" secondItem="kjS-AJ-h7h" secondAttribute="bottom" constant="301" id="JD3-3K-xU0"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="trailing" secondItem="JhQ-Y9-Jl2" secondAttribute="trailing" id="OTO-qi-Bf4"/>
+                            <constraint firstItem="kjS-AJ-h7h" firstAttribute="top" secondItem="SEe-e4-FVZ" secondAttribute="top" id="PNY-L1-VGX"/>
+                            <constraint firstItem="kjS-AJ-h7h" firstAttribute="leading" secondItem="SEe-e4-FVZ" secondAttribute="leading" id="TIZ-sn-PHL"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="trailing" secondItem="kjS-AJ-h7h" secondAttribute="trailing" id="XSh-jl-ZOH"/>
+                            <constraint firstItem="kjS-AJ-h7h" firstAttribute="leading" secondItem="SEe-e4-FVZ" secondAttribute="leading" id="dAN-LP-IUm"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="bottom" secondItem="kjS-AJ-h7h" secondAttribute="bottom" id="g25-Ie-TL7"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="trailing" secondItem="kjS-AJ-h7h" secondAttribute="trailing" id="kBM-WB-dG3"/>
+                            <constraint firstItem="gpb-Gb-qQa" firstAttribute="width" secondItem="UB1-Ri-ubN" secondAttribute="width" multiplier="0.57971" id="kxn-zs-k09"/>
+                            <constraint firstItem="JhQ-Y9-Jl2" firstAttribute="leading" secondItem="SEe-e4-FVZ" secondAttribute="leading" id="l2K-zu-2uN"/>
+                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="trailing" secondItem="kjS-AJ-h7h" secondAttribute="trailing" id="sZb-Fw-SFw"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Início" selectedImage="house" catalog="system" id="fbd-nK-Goq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8p-9y-tv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.217391304347828" y="-340.17857142857139"/>
+            <point key="canvasLocation" x="638" y="-340"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aam-mN-gwn">
@@ -263,27 +304,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="sjU-Vm-ciF">
-                                <rect key="frame" x="0.0" y="39" width="414" height="791"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Do yoga Not shopping" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KW-JY-A3n">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-9a-hKk">
+                                <rect key="frame" x="87" y="486" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4B-95-qSb" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Do yoga Not shopping" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-Ky-sTo">
+                                                <rect key="frame" x="87" y="423" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" systemColor="systemBlueColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.0" green="0.38039215686274508" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <constraints>
+                                    <constraint firstItem="d4B-95-qSb" firstAttribute="leading" secondItem="QzI-th-8TN" secondAttribute="leading" id="5yy-RF-Wx4"/>
+                                    <constraint firstItem="QzI-th-8TN" firstAttribute="bottom" secondItem="d4B-95-qSb" secondAttribute="bottom" id="Kpm-UF-GJL"/>
+                                    <constraint firstItem="QzI-th-8TN" firstAttribute="trailing" secondItem="d4B-95-qSb" secondAttribute="trailing" id="yDn-j9-4gT"/>
+                                    <constraint firstItem="d4B-95-qSb" firstAttribute="top" secondItem="QzI-th-8TN" secondAttribute="top" id="z8v-Sy-MzN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="SoA-6z-ybq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="QzI-th-8TN"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-c8-3De" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PH7-9a-hKk" secondAttribute="bottom" id="73C-WA-sVv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uMD-c8-3De" secondAttribute="trailing" id="GRF-mA-bWp"/>
+                            <constraint firstItem="PH7-9a-hKk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ISf-k2-ei9"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JgD-F3-bpa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uMD-c8-3De" secondAttribute="bottom" id="L1y-WN-TcQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PH7-9a-hKk" secondAttribute="trailing" id="VSN-fQ-F9D"/>
+                            <constraint firstItem="PH7-9a-hKk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aMj-VT-P3J"/>
+                            <constraint firstItem="d4B-95-qSb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nrs-43-f0E"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="orO-15-8Ke"/>
+                            <constraint firstItem="d4B-95-qSb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.884545" id="sSM-nS-GnH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Repouso" selectedImage="moon" catalog="system" id="KFy-hb-ykp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="333"/>
+            <point key="canvasLocation" x="-65" y="333"/>
         </scene>
     </scenes>
     <resources>
