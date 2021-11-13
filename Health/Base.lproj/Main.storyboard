@@ -291,38 +291,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-9a-hKk">
-                                <rect key="frame" x="87" y="486" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4B-95-qSb" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Do yoga Not shopping" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-Ky-sTo">
-                                                <rect key="frame" x="87" y="423" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" systemColor="systemBlueColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="SoA-6z-ybq"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="QzI-th-8TN"/>
-                            </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-c8-3De" userLabel="Background Image View">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-c8-3De" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do yoga Not shopping" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUX-8o-8UK" userLabel="Do yoga Not shopping">
+                                <rect key="frame" x="120" y="403" width="174.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="qi4-KG-1mv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DWg-sn-wGP"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WXi-3q-gNo"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bjk-aJ-okm"/>
+                            <constraint firstItem="YUX-8o-8UK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d7H-OJ-xJ1"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mjD-km-Pf0"/>
+                            <constraint firstItem="YUX-8o-8UK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtE-4Z-2hl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Repouso" selectedImage="moon" catalog="system" id="KFy-hb-ykp"/>
                 </viewController>
