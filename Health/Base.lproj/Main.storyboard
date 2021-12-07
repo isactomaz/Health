@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -75,7 +76,9 @@
                             <constraint firstItem="gL6-mo-Bzv" firstAttribute="leading" secondItem="76y-bG-m3H" secondAttribute="leading" id="rYv-Kv-fFr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" selectedImage="person" catalog="system" id="BJb-kA-T8n"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" selectedImage="person" catalog="system" id="BJb-kA-T8n">
+                        <imageReference key="image" image="person" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRp-gd-3r8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -215,7 +218,9 @@
                             <constraint firstItem="BBX-zq-pWj" firstAttribute="trailing" secondItem="kvR-w9-xbw" secondAttribute="trailing" id="ely-yU-Mkn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" selectedImage="chart.line.uptrend.xyaxis" catalog="system" id="JHJ-sq-ayC"/>
+                    <tabBarItem key="tabBarItem" title="Stats" selectedImage="chart.line.uptrend.xyaxis" catalog="system" id="JHJ-sq-ayC">
+                        <imageReference key="image" image="chart.line.uptrend.xyaxis" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daR-Jt-dHJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,7 +383,9 @@
                             <constraint firstItem="gpb-Gb-qQa" firstAttribute="width" secondItem="UB1-Ri-ubN" secondAttribute="width" id="gIv-yJ-mLq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Início" selectedImage="house" catalog="system" id="fbd-nK-Goq"/>
+                    <tabBarItem key="tabBarItem" title="Início" selectedImage="house" catalog="system" id="fbd-nK-Goq">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8p-9y-tv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -437,7 +444,9 @@
                             <constraint firstItem="YUX-8o-8UK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtE-4Z-2hl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Repouso" selectedImage="moon" catalog="system" id="KFy-hb-ykp"/>
+                    <tabBarItem key="tabBarItem" title="Repouso" selectedImage="moon" catalog="system" id="KFy-hb-ykp">
+                        <imageReference key="image" image="moon" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
