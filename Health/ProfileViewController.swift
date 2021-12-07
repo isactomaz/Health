@@ -7,15 +7,27 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var profileTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        profileTableView.delegate = self
+        profileTableView.dataSource = self
     }
-    
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        ProfileModel.profileTableItems.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let profileTableViewCell = profileTableView.dequeueReusableCell(withIdentifier: "profileTableViewCell", for: indexPath) as! ProfileTableViewCell
+        profileTableViewCell.contentLabel.text = ProfileModel.profileTableItems[indexPath.row].content
+        return profileTableViewCell
+    }
     /*
     // MARK: - Navigation
 
