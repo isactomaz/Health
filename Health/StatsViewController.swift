@@ -7,15 +7,27 @@
 
 import UIKit
 
-class StatsViewController: UIViewController {
+class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var statsTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        statsTableView.delegate = self
+        statsTableView.dataSource = self
     }
-    
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        StatsModel.statsTableItems.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let statsTableViewCell = statsTableView.dequeueReusableCell(withIdentifier: "statsTableViewCell", for: indexPath) as! StatsTableViewCell
+        statsTableViewCell.contentLabel.text = StatsModel.statsTableItems[indexPath.row].content
+        return statsTableViewCell
+    }
     /*
     // MARK: - Navigation
 
