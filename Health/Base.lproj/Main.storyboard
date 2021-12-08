@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uxZ-I3-EBv" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gL6-mo-Bzv" userLabel="Content View">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
@@ -93,13 +93,13 @@
                         <viewLayoutGuide key="safeArea" id="76y-bG-m3H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uxZ-I3-EBv" firstAttribute="top" secondItem="76y-bG-m3H" secondAttribute="top" id="1YE-en-hEf"/>
+                            <constraint firstItem="uxZ-I3-EBv" firstAttribute="top" secondItem="qK3-lu-sRb" secondAttribute="top" id="1YE-en-hEf"/>
                             <constraint firstItem="76y-bG-m3H" firstAttribute="bottom" secondItem="gL6-mo-Bzv" secondAttribute="bottom" id="532-Ee-xWm"/>
                             <constraint firstItem="gL6-mo-Bzv" firstAttribute="top" secondItem="76y-bG-m3H" secondAttribute="top" id="9js-XH-q6s"/>
                             <constraint firstItem="gL6-mo-Bzv" firstAttribute="trailing" secondItem="76y-bG-m3H" secondAttribute="trailing" id="C4u-ti-YkU"/>
-                            <constraint firstItem="uxZ-I3-EBv" firstAttribute="leading" secondItem="76y-bG-m3H" secondAttribute="leading" id="CPH-B9-zHI"/>
-                            <constraint firstItem="76y-bG-m3H" firstAttribute="bottom" secondItem="uxZ-I3-EBv" secondAttribute="bottom" id="jKQ-hW-CwB"/>
-                            <constraint firstItem="uxZ-I3-EBv" firstAttribute="trailing" secondItem="76y-bG-m3H" secondAttribute="trailing" id="oMi-f2-zyy"/>
+                            <constraint firstItem="uxZ-I3-EBv" firstAttribute="leading" secondItem="qK3-lu-sRb" secondAttribute="leading" id="CPH-B9-zHI"/>
+                            <constraint firstAttribute="bottom" secondItem="uxZ-I3-EBv" secondAttribute="bottom" id="jKQ-hW-CwB"/>
+                            <constraint firstItem="uxZ-I3-EBv" firstAttribute="trailing" secondItem="qK3-lu-sRb" secondAttribute="trailing" id="oMi-f2-zyy"/>
                             <constraint firstItem="gL6-mo-Bzv" firstAttribute="leading" secondItem="76y-bG-m3H" secondAttribute="leading" id="rYv-Kv-fFr"/>
                         </constraints>
                     </view>
@@ -307,8 +307,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-c8-3De" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-c8-3De" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do yoga Not shopping" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUX-8o-8UK" userLabel="Do yoga Not shopping">
@@ -324,11 +324,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uMD-c8-3De" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DWg-sn-wGP"/>
-                            <constraint firstItem="uMD-c8-3De" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WXi-3q-gNo"/>
-                            <constraint firstItem="uMD-c8-3De" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bjk-aJ-okm"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="DWg-sn-wGP"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WXi-3q-gNo"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="bjk-aJ-okm"/>
                             <constraint firstItem="YUX-8o-8UK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d7H-OJ-xJ1"/>
-                            <constraint firstItem="uMD-c8-3De" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mjD-km-Pf0"/>
+                            <constraint firstItem="uMD-c8-3De" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mjD-km-Pf0"/>
                             <constraint firstItem="YUX-8o-8UK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtE-4Z-2hl"/>
                         </constraints>
                     </view>
