@@ -249,6 +249,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="panicButton:" destination="QiG-ml-ZSP" eventType="touchUpInside" id="XN4-1m-uqT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
