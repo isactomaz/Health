@@ -16,6 +16,7 @@
 		4B3DA9A4273A2F6300337F3F /* HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3DA9A3273A2F6300337F3F /* HealthTests.swift */; };
 		4B3DA9AE273A2F6400337F3F /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3DA9AD273A2F6400337F3F /* HealthUITests.swift */; };
 		4B3DA9B0273A2F6400337F3F /* HealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3DA9AF273A2F6400337F3F /* HealthUITestsLaunchTests.swift */; };
+		4B7D9B0A276044C800830799 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7D9B09276044C800830799 /* HomeViewController.swift */; };
 		4BC90851275FC1D5001DD986 /* StatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC90850275FC1D5001DD986 /* StatsModel.swift */; };
 		4BC90853275FD0FF001DD986 /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC90852275FD0FF001DD986 /* StatsTableViewCell.swift */; };
 		4BC90855275FD8C9001DD986 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC90854275FD8C9001DD986 /* ProfileModel.swift */; };
@@ -56,6 +57,7 @@
 		4B3DA9A9273A2F6400337F3F /* HealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3DA9AD273A2F6400337F3F /* HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUITests.swift; sourceTree = "<group>"; };
 		4B3DA9AF273A2F6400337F3F /* HealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B7D9B09276044C800830799 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4BC90850275FC1D5001DD986 /* StatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsModel.swift; sourceTree = "<group>"; };
 		4BC90852275FD0FF001DD986 /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
 		4BC90854275FD8C9001DD986 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		4B3DA98B273A2F6200337F3F /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				4B7D9B09276044C800830799 /* HomeViewController.swift */,
 				4BC90856275FDA8E001DD986 /* ProfileTableViewCell.swift */,
 				4BC90854275FD8C9001DD986 /* ProfileModel.swift */,
 				4BC90852275FD0FF001DD986 /* StatsTableViewCell.swift */,
@@ -286,6 +289,7 @@
 				4B3DA98D273A2F6200337F3F /* AppDelegate.swift in Sources */,
 				4BC90851275FC1D5001DD986 /* StatsModel.swift in Sources */,
 				4BCFA47F274D535000B728D7 /* RestViewController.swift in Sources */,
+				4B7D9B0A276044C800830799 /* HomeViewController.swift in Sources */,
 				4BC90853275FD0FF001DD986 /* StatsTableViewCell.swift in Sources */,
 				4BE9CD6B274C684200F56E71 /* StatsViewController.swift in Sources */,
 				4B3DA98F273A2F6200337F3F /* SceneDelegate.swift in Sources */,
