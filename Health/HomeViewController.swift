@@ -10,8 +10,12 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBAction func panicButton(_ sender: Any) {
-        guard let number = URL(string: "tel://" + "5581912345678") else { return }
-        UIApplication.shared.open(number)
+        guard let number = URL(string: "tel://\(4035555678)") else { return }
+        if UIApplication.shared.canOpenURL(number) {
+            UIApplication.shared.open(number)
+        } else {
+            print("Can't open url on this device")
+        }
     }
 
     override func viewDidLoad() {
