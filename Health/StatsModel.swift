@@ -9,12 +9,13 @@ import Foundation
 
 struct StatsModel {
     static let statsTableItems = [
-        StatsTableItem(content: "Money you saved so far"),
-        StatsTableItem(content: "Time you spent without buying"),
-        StatsTableItem(content: "Time you saved"),
+        StatsTableItem(content: "Money you saved so far", value: 99),
+        StatsTableItem(content: "Time you spent without buying", value: 3),
+        StatsTableItem(content: "Time you saved", value: 6),
     ]
 
     struct StatsTableItem {
         var content: String
+        var value: Float
     }
 }

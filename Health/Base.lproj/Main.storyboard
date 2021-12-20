@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bzO-NV-nmf">
-                                <rect key="frame" x="0.0" y="250" width="414" height="563"/>
+                                <rect key="frame" x="0.0" y="249.5" width="414" height="563.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statsTableViewCell" id="8In-iC-0Jt" customClass="StatsTableViewCell" customModule="Health" customModuleProvider="target">
@@ -149,14 +149,26 @@
                                                     <color key="textColor" systemColor="systemBlueColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eup-qv-TY8">
+                                                    <rect key="frame" x="364" y="11.5" width="50" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="jB9-N9-Z8l"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="eup-qv-TY8" firstAttribute="centerY" secondItem="I27-wC-Gfz" secondAttribute="centerY" id="0PT-Tb-hUI"/>
                                                 <constraint firstItem="5AA-uu-5O6" firstAttribute="centerY" secondItem="I27-wC-Gfz" secondAttribute="centerY" id="3ov-Zr-3r0"/>
+                                                <constraint firstItem="eup-qv-TY8" firstAttribute="trailing" secondItem="I27-wC-Gfz" secondAttribute="trailingMargin" constant="20" id="h09-gZ-5Tn"/>
                                                 <constraint firstItem="5AA-uu-5O6" firstAttribute="leading" secondItem="I27-wC-Gfz" secondAttribute="leading" constant="20" id="u3p-Ua-jo4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="contentLabel" destination="5AA-uu-5O6" id="JeK-gQ-Rn5"/>
+                                            <outlet property="valueLabel" destination="eup-qv-TY8" id="Ojw-bk-rj9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

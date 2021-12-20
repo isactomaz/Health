@@ -26,6 +26,7 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let statsTableViewCell = statsTableView.dequeueReusableCell(withIdentifier: "statsTableViewCell", for: indexPath) as! StatsTableViewCell
         statsTableViewCell.contentLabel.text = StatsModel.statsTableItems[indexPath.row].content
+        statsTableViewCell.valueLabel.text = StatsModel.statsTableItems[indexPath.row].value.description
         return statsTableViewCell
     }
     /*
