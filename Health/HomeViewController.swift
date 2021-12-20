@@ -5,12 +5,24 @@
 //  Created by Isac Tomaz da Silva on 07/12/21.
 //
 
+import Contacts
+import ContactsUI
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CNContactPickerDelegate {
 
     @IBAction func panicButton(_ sender: Any) {
-        guard let number = URL(string: "tel://\(4035555678)") else { return }
+        var friendNumber = HomeModel.numbers.first?.number
+
+        if friendNumber == 0 {
+            let contactViewController = CNContactPickerViewController()
+            contactViewController.delegate = self
+            present(contactViewController, animated: true)
+
+            friendNumber = Int(HomeModel.numbers.first!.number)
+        }
+
+        guard let number = URL(string: "tel://\(friendNumber!)") else { return }
         if UIApplication.shared.canOpenURL(number) {
             UIApplication.shared.open(number)
         } else {
@@ -18,12 +30,17 @@ class HomeViewController: UIViewController {
         }
     }
 
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        let number = contact.phoneNumbers.first!.value.stringValue.replacingOccurrences(of: "-", with: "").replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
+        let phoneNumber = Int(number)
+        HomeModel.update(phoneNumber!)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
