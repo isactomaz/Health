@@ -129,9 +129,8 @@
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bzO-NV-nmf">
-                                <rect key="frame" x="0.0" y="249" width="414" height="125"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bzO-NV-nmf">
+                                <rect key="frame" x="0.0" y="250" width="414" height="563"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statsTableViewCell" id="8In-iC-0Jt" customClass="StatsTableViewCell" customModule="Health" customModuleProvider="target">
@@ -141,8 +140,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-uu-5O6">
-                                                    <rect key="frame" x="16" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-uu-5O6">
+                                                    <rect key="frame" x="20" y="11.5" width="235" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="235" id="rT5-97-JSU"/>
                                                     </constraints>
@@ -151,6 +150,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5AA-uu-5O6" firstAttribute="centerY" secondItem="I27-wC-Gfz" secondAttribute="centerY" id="3ov-Zr-3r0"/>
+                                                <constraint firstItem="5AA-uu-5O6" firstAttribute="leading" secondItem="I27-wC-Gfz" secondAttribute="leading" constant="20" id="u3p-Ua-jo4"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="contentLabel" destination="5AA-uu-5O6" id="JeK-gQ-Rn5"/>
@@ -164,9 +167,13 @@
                         <constraints>
                             <constraint firstItem="BBX-zq-pWj" firstAttribute="leading" secondItem="OB0-Du-nmA" secondAttribute="leading" id="5ZY-h5-RcQ"/>
                             <constraint firstAttribute="trailing" secondItem="4y9-C1-qJg" secondAttribute="trailing" constant="30" id="Fte-Vb-cYR"/>
+                            <constraint firstItem="bzO-NV-nmf" firstAttribute="leading" secondItem="kvR-w9-xbw" secondAttribute="leading" id="L9e-QM-vtH"/>
                             <constraint firstItem="4y9-C1-qJg" firstAttribute="leading" secondItem="OB0-Du-nmA" secondAttribute="leading" constant="30" id="RpZ-m5-LDJ"/>
                             <constraint firstItem="BBX-zq-pWj" firstAttribute="top" secondItem="OB0-Du-nmA" secondAttribute="top" id="iPm-kY-87l"/>
                             <constraint firstAttribute="bottom" secondItem="BBX-zq-pWj" secondAttribute="bottom" id="jcA-4q-VS2"/>
+                            <constraint firstItem="bzO-NV-nmf" firstAttribute="top" secondItem="4y9-C1-qJg" secondAttribute="bottom" constant="8" id="k1p-g5-YeI"/>
+                            <constraint firstItem="kvR-w9-xbw" firstAttribute="bottom" secondItem="bzO-NV-nmf" secondAttribute="bottom" id="tMc-ZT-RP5"/>
+                            <constraint firstItem="bzO-NV-nmf" firstAttribute="trailing" secondItem="kvR-w9-xbw" secondAttribute="trailing" id="v9S-vI-LGp"/>
                             <constraint firstAttribute="trailing" secondItem="BBX-zq-pWj" secondAttribute="trailing" id="vLZ-r8-be6"/>
                             <constraint firstItem="4y9-C1-qJg" firstAttribute="top" secondItem="kvR-w9-xbw" secondAttribute="top" constant="90" id="zcH-cS-vvh"/>
                         </constraints>
