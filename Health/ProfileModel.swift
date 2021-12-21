@@ -9,11 +9,12 @@ import Foundation
 
 struct ProfileModel {
     static let profileTableItems = [
-        ProfileTableItem(content: "Compartilhar seus resultados"),
-        ProfileTableItem(content: "Lembrete de responsabilidade diária"),
+        ProfileTableItem(content: "Compartilhar seus resultados", enabled: true),
+        ProfileTableItem(content: "Lembrete de responsabilidade diária", enabled: true),
     ]
 
     struct ProfileTableItem {
         var content: String
+        var enabled: Bool
     }
 }

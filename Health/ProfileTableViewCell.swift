@@ -10,6 +10,17 @@ import UIKit
 class ProfileTableViewCell: UITableViewCell {
 
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var valueSwitch: UISwitch!
+
+    @IBAction func clickedSwitch(_ sender: Any) {
+        if valueSwitch.isOn {
+            valueSwitch.setOn(true, animated: true)
+            print("on")
+        } else {
+            valueSwitch.setOn(false, animated: true)
+            print("off")
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

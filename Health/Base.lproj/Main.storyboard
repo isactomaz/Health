@@ -62,6 +62,9 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fy3-LT-vZG">
                                                     <rect key="frame" x="345" y="6.5" width="51" height="31"/>
                                                     <color key="onTintColor" systemColor="systemTealColor"/>
+                                                    <connections>
+                                                        <action selector="clickedSwitch:" destination="a9g-8O-zjL" eventType="valueChanged" id="iuG-Ov-cEX"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -73,6 +76,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="contentLabel" destination="jQ2-Tk-m3T" id="BI3-4A-xrI"/>
+                                            <outlet property="valueSwitch" destination="Fy3-LT-vZG" id="Wyz-MM-dgs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
