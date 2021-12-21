@@ -10,17 +10,18 @@ import Foundation
 struct TestModel {
 
     static let questions = [
-        Question(content: "Biometrics lock?"),
-        Question(content: "Share stats?"),
-        Question(content: "Daily accountability reminder?"),
+        Question(content: "Você sente muita falta de comprar algo?"),
+        Question(content: "Qual seu sentimento relacionado à última compra?"),
+        Question(content: "Sua última compra foi adequada para sua necessidade?"),
+        Question(content: "Sua última compra foi influenciada por amigos/redes sociais?"),
     ]
 
     static let options = [
-        Choice(content: "very low"),
-        Choice(content: "low"),
-        Choice(content: "middle"),
-        Choice(content: "high"),
-        Choice(content: "very high"),
+        Choice(content: "Muito baixo"),
+        Choice(content: "Baixo"),
+        Choice(content: "Neutro"),
+        Choice(content: "Alto"),
+        Choice(content: "Muito alto"),
     ]
 
     struct Question {

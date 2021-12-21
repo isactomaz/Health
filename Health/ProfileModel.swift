@@ -9,9 +9,8 @@ import Foundation
 
 struct ProfileModel {
     static let profileTableItems = [
-        ProfileTableItem(content: "Biometrics lock"),
-        ProfileTableItem(content: "Share stats"),
-        ProfileTableItem(content: "Daily accountability reminder"),
+        ProfileTableItem(content: "Compartilhar seus resultados"),
+        ProfileTableItem(content: "Lembrete de responsabilidade diária"),
     ]
 
     struct ProfileTableItem {

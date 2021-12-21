@@ -9,9 +9,10 @@ import Foundation
 
 struct StatsModel {
     static let statsTableItems = [
-        StatsTableItem(content: "Money you saved so far", value: 99),
-        StatsTableItem(content: "Time you spent without buying", value: 3),
-        StatsTableItem(content: "Time you saved", value: 6),
+        StatsTableItem(content: "Satisfação relacionada às compras realizadas", value: 3),
+        StatsTableItem(content: "Tempo de repouso", value: 3),
+        StatsTableItem(content: "Quantidade de desbloqueio de tela", value: 25),
+        StatsTableItem(content: "Tempo do aparelho", value: 6),
     ]
 
     struct StatsTableItem {
