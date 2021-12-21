@@ -50,10 +50,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-Tk-m3T">
-                                                    <rect key="frame" x="20" y="11.5" width="225" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-Tk-m3T">
+                                                    <rect key="frame" x="20" y="11.5" width="300" height="20.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="225" id="XP5-CV-6Kj"/>
+                                                        <constraint firstAttribute="width" constant="300" id="XP5-CV-6Kj"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemBlueColor"/>
@@ -123,7 +123,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BBX-zq-pWj" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best things in life are free, but saving for a rainy day is important." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-C1-qJg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As melhores coisas da vida são graça, mas não perder tempo não tem preço" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-C1-qJg">
                                 <rect key="frame" x="30" y="134" width="354" height="107.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
@@ -140,10 +140,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-uu-5O6">
-                                                    <rect key="frame" x="20" y="11.5" width="235" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-uu-5O6">
+                                                    <rect key="frame" x="20" y="11.5" width="300" height="20.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="235" id="rT5-97-JSU"/>
+                                                        <constraint firstAttribute="width" constant="300" id="rT5-97-JSU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemBlueColor"/>
@@ -231,7 +231,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVB-iC-yGs">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVB-iC-yGs">
                                                 <rect key="frame" x="99" y="0.0" width="315" height="90"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" systemColor="systemBlueColor"/>
@@ -250,7 +250,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="PANIC BUTTON">
+                                                <buttonConfiguration key="configuration" style="plain" title="BOTÃO DO PANICO">
                                                     <attributedString key="attributedSubtitle"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -328,8 +328,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do yoga Not shopping" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUX-8o-8UK" userLabel="Do yoga Not shopping">
-                                <rect key="frame" x="120" y="403" width="174.5" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guarde um tempo para você mesmo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUX-8o-8UK" userLabel="Do yoga Not shopping">
+                                <rect key="frame" x="8" y="403" width="398" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="qi4-KG-1mv"/>
                                 </constraints>
@@ -341,12 +341,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YUX-8o-8UK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2j8-0K-yyJ"/>
                             <constraint firstItem="uMD-c8-3De" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="DWg-sn-wGP"/>
+                            <constraint firstAttribute="trailing" secondItem="YUX-8o-8UK" secondAttribute="trailing" constant="8" id="P6x-yD-trS"/>
                             <constraint firstItem="uMD-c8-3De" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WXi-3q-gNo"/>
                             <constraint firstItem="uMD-c8-3De" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="bjk-aJ-okm"/>
-                            <constraint firstItem="YUX-8o-8UK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d7H-OJ-xJ1"/>
                             <constraint firstItem="uMD-c8-3De" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mjD-km-Pf0"/>
-                            <constraint firstItem="YUX-8o-8UK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtE-4Z-2hl"/>
+                            <constraint firstItem="YUX-8o-8UK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="qKP-3S-xuh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Repouso" selectedImage="moon" catalog="system" id="KFy-hb-ykp">
