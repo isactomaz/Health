@@ -37,6 +37,9 @@ class TestViewController: UIViewController, UITableViewDelegate, UITableViewData
         return testTableViewCell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        TestModel.choice[indexPath.section] = indexPath.row
+    }
     /*
     // MARK: - Navigation
 

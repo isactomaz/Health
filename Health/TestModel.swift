@@ -24,6 +24,8 @@ struct TestModel {
         Choice(content: "Muito alto"),
     ]
 
+    static var choice = [2, 2, 2, 2]
+
     struct Question {
         var content: String
     }
