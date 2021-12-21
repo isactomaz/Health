@@ -39,6 +39,18 @@ class TestViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         TestModel.choice[indexPath.section] = indexPath.row
+
+        testTableView.deselectRow(at: indexPath, animated: true)
+
+        if let cell = testTableView.cellForRow(at: indexPath as IndexPath) {
+            if cell.accessoryType == .checkmark{
+                cell.accessoryType = .none
+            }
+            else{
+                cell.accessoryType = .checkmark
+            }
+        }
+
     }
     /*
     // MARK: - Navigation
