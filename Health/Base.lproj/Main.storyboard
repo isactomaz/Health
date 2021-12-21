@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dmo-zO-WZS">
-                                <rect key="frame" x="0.0" y="191" width="414" height="406"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="622"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="profileTableViewCell" id="a9g-8O-zjL" customClass="ProfileTableViewCell" customModule="Health" customModuleProvider="target">
@@ -77,9 +77,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="v3c-sc-bFT">
-                                <rect key="frame" x="47" y="605" width="320" height="216"/>
-                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="76y-bG-m3H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,15 +86,13 @@
                             <constraint firstItem="76y-bG-m3H" firstAttribute="trailing" secondItem="dmo-zO-WZS" secondAttribute="trailing" id="F3C-Wg-WoF"/>
                             <constraint firstItem="uxZ-I3-EBv" firstAttribute="top" secondItem="qK3-lu-sRb" secondAttribute="top" id="LLf-TK-Zol"/>
                             <constraint firstItem="dmo-zO-WZS" firstAttribute="top" secondItem="qvm-xy-3z5" secondAttribute="bottom" constant="8" id="Mjl-Rb-gd2"/>
-                            <constraint firstItem="v3c-sc-bFT" firstAttribute="centerX" secondItem="qK3-lu-sRb" secondAttribute="centerX" id="QoK-O0-XxG"/>
                             <constraint firstItem="qvm-xy-3z5" firstAttribute="top" secondItem="AsY-Ml-zh5" secondAttribute="bottom" constant="8" id="R1C-Qm-h5M"/>
                             <constraint firstAttribute="bottom" secondItem="uxZ-I3-EBv" secondAttribute="bottom" id="TVy-WB-FFp"/>
                             <constraint firstItem="AsY-Ml-zh5" firstAttribute="centerX" secondItem="qK3-lu-sRb" secondAttribute="centerX" id="azC-Ie-LTr"/>
                             <constraint firstItem="dmo-zO-WZS" firstAttribute="leading" secondItem="76y-bG-m3H" secondAttribute="leading" id="eDn-AU-bsf"/>
-                            <constraint firstItem="v3c-sc-bFT" firstAttribute="top" secondItem="dmo-zO-WZS" secondAttribute="bottom" constant="8" id="iDC-Hn-WCc"/>
-                            <constraint firstItem="v3c-sc-bFT" firstAttribute="bottom" secondItem="76y-bG-m3H" secondAttribute="bottom" constant="8" id="kwa-GY-OmA"/>
                             <constraint firstItem="AsY-Ml-zh5" firstAttribute="top" secondItem="76y-bG-m3H" secondAttribute="top" constant="20" id="pJc-Mg-vkm"/>
                             <constraint firstAttribute="trailing" secondItem="uxZ-I3-EBv" secondAttribute="trailing" id="upz-JO-ChM"/>
+                            <constraint firstItem="76y-bG-m3H" firstAttribute="bottom" secondItem="dmo-zO-WZS" secondAttribute="bottom" id="vZZ-AV-5yZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" selectedImage="person" catalog="system" id="BJb-kA-T8n">
@@ -123,14 +118,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BBX-zq-pWj" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As melhores coisas da vida são graça, mas não perder tempo não tem preço" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-C1-qJg">
-                                <rect key="frame" x="30" y="134" width="354" height="107.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As melhores coisas da vida são de graça, mas não perder tempo não tem preço" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-C1-qJg">
+                                <rect key="frame" x="30" y="134" width="354" height="143.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bzO-NV-nmf">
-                                <rect key="frame" x="0.0" y="249.5" width="414" height="563.5"/>
+                                <rect key="frame" x="0.0" y="285.5" width="414" height="527.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statsTableViewCell" id="8In-iC-0Jt" customClass="StatsTableViewCell" customModule="Health" customModuleProvider="target">
@@ -190,7 +185,7 @@
                             <constraint firstItem="4y9-C1-qJg" firstAttribute="top" secondItem="kvR-w9-xbw" secondAttribute="top" constant="90" id="zcH-cS-vvh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" selectedImage="chart.line.uptrend.xyaxis" catalog="system" id="JHJ-sq-ayC">
+                    <tabBarItem key="tabBarItem" title="Resultados" selectedImage="chart.line.uptrend.xyaxis" catalog="system" id="JHJ-sq-ayC">
                         <imageReference key="image" image="chart.line.uptrend.xyaxis" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <connections>
@@ -212,78 +207,59 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-Y9-Jl2" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LsJ-Cr-X2X" userLabel="Main VStack">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ApK-c0-2pK" userLabel="User HStack">
+                                <rect key="frame" x="95" y="52" width="224.5" height="90"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ApK-c0-2pK" userLabel="User HStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="jKW-ky-RLm" userLabel="User Image View">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="90" id="8vB-zU-nCD"/>
-                                                    <constraint firstAttribute="height" constant="90" id="Cqa-Gn-z5y"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="50"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVB-iC-yGs">
-                                                <rect key="frame" x="99" y="0.0" width="315" height="90"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" systemColor="systemBlueColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mba-Lj-Ncf">
-                                        <rect key="frame" x="0.0" y="90" width="414" height="679"/>
-                                        <subviews>
-                                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="U9g-VI-WRl">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
-                                            </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-lb-AQx">
-                                                <rect key="frame" x="0.0" y="648" width="414" height="31"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" systemColor="systemRedColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="BOTÃO DO PANICO">
-                                                    <attributedString key="attributedSubtitle"/>
-                                                </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="panicButton:" destination="QiG-ml-ZSP" eventType="touchUpInside" id="XN4-1m-uqT"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="jKW-ky-RLm" userLabel="User Image View">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="8vB-zU-nCD"/>
+                                            <constraint firstAttribute="height" constant="90" id="Cqa-Gn-z5y"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVB-iC-yGs">
+                                        <rect key="frame" x="99" y="0.0" width="125.5" height="90"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Mba-Lj-Ncf" secondAttribute="trailing" constant="30" id="MiS-k5-1RJ"/>
-                                    <constraint firstItem="Mba-Lj-Ncf" firstAttribute="leading" secondItem="LsJ-Cr-X2X" secondAttribute="leading" constant="30" id="Shp-JW-goe"/>
-                                    <constraint firstItem="ApK-c0-2pK" firstAttribute="leading" secondItem="LsJ-Cr-X2X" secondAttribute="leading" constant="9" id="VC0-uy-tRt"/>
-                                    <constraint firstAttribute="trailing" secondItem="ApK-c0-2pK" secondAttribute="trailing" constant="9" id="xxx-Qe-sLm"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-lb-AQx">
+                                <rect key="frame" x="132" y="432.5" width="150.5" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="BOTÃO DO PANICO">
+                                    <attributedString key="attributedSubtitle"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="panicButton:" destination="QiG-ml-ZSP" eventType="touchUpInside" id="XN4-1m-uqT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SEe-e4-FVZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="JhQ-Y9-Jl2" secondAttribute="bottom" id="3Ac-Qr-Boa"/>
-                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="bottom" secondItem="LsJ-Cr-X2X" secondAttribute="bottom" id="4dP-Fk-NDs"/>
-                            <constraint firstItem="LsJ-Cr-X2X" firstAttribute="leading" secondItem="SEe-e4-FVZ" secondAttribute="leading" id="ITV-Jh-aqw"/>
-                            <constraint firstItem="LsJ-Cr-X2X" firstAttribute="top" secondItem="SEe-e4-FVZ" secondAttribute="top" id="USA-PT-S7b"/>
+                            <constraint firstItem="ApK-c0-2pK" firstAttribute="top" secondItem="SEe-e4-FVZ" secondAttribute="top" constant="8" id="3wp-IX-Ko2"/>
+                            <constraint firstItem="TD6-lb-AQx" firstAttribute="centerY" secondItem="UB1-Ri-ubN" secondAttribute="centerY" id="blv-LN-yks"/>
                             <constraint firstAttribute="trailing" secondItem="JhQ-Y9-Jl2" secondAttribute="trailing" id="cDi-hS-Jsj"/>
-                            <constraint firstItem="SEe-e4-FVZ" firstAttribute="trailing" secondItem="LsJ-Cr-X2X" secondAttribute="trailing" id="our-DN-2oH"/>
+                            <constraint firstItem="ApK-c0-2pK" firstAttribute="centerX" secondItem="UB1-Ri-ubN" secondAttribute="centerX" id="hQd-ph-5wu"/>
                             <constraint firstItem="JhQ-Y9-Jl2" firstAttribute="top" secondItem="UB1-Ri-ubN" secondAttribute="top" id="sNH-m5-bo1"/>
+                            <constraint firstItem="TD6-lb-AQx" firstAttribute="centerX" secondItem="UB1-Ri-ubN" secondAttribute="centerX" id="xej-cV-zPm"/>
                             <constraint firstItem="JhQ-Y9-Jl2" firstAttribute="leading" secondItem="UB1-Ri-ubN" secondAttribute="leading" id="xz2-mE-vMB"/>
                         </constraints>
                     </view>
@@ -358,7 +334,7 @@
             </objects>
             <point key="canvasLocation" x="-983" y="1051"/>
         </scene>
-        <!--Test-->
+        <!--Teste-->
         <scene sceneID="MKV-rC-Pet">
             <objects>
                 <viewController id="3yd-Vn-cfj" customClass="TestViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
@@ -409,7 +385,7 @@
                             <constraint firstAttribute="bottom" secondItem="OrI-Eb-yT7" secondAttribute="bottom" id="wwJ-Vd-cSm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Test" image="testtube.2" catalog="system" selectedImage="testtube.2" id="cmy-er-X0R"/>
+                    <tabBarItem key="tabBarItem" title="Teste" image="testtube.2" catalog="system" selectedImage="testtube.2" id="cmy-er-X0R"/>
                     <connections>
                         <outlet property="testTableView" destination="fkC-cu-5gm" id="b5J-wF-2SH"/>
                     </connections>
