@@ -34,6 +34,7 @@ class TestViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let testTableViewCell = testTableView.dequeueReusableCell(withIdentifier: "testTableViewCell", for: indexPath) as! TestTableViewCell
         testTableViewCell.contentLabel.text = TestModel.options[indexPath.row].content
+        testTableViewCell.accessoryType = testTableViewCell.isSelected ? .checkmark : .none
         return testTableViewCell
     }
 
